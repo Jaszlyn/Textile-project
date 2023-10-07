@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ <h1>Top 5 Fashion Trends</h1>
+  <br>
+  <div>
+    <nav>
+      <ul>
+        <li><a href="one.html">80s Fashion Trends</a></li>
+         <li><a href="two.html">90s Fashion Trends</a></li>
+         <li><a href="three.html">2000s Fashion Trends</a></li>
+         <li><a href="four.html">2010s Fashion Trends</a></li>
+         <li><a href="five.html">2020 fashion Trends</a></li>
+      </ul>
+      </nav>
+  </div>
+<div id="login">
+        <p>Enter Username</p>
+        <input type="text" id="user">
+        <br>
+        <p>Please Input Password </p>
+        <input type="password"id="pass">
+        <br>
+        <p>Confirm Password</p>
+        <input type="password" id="confirm">
+        <br>
+        <button type="button" onclick="check()">Submit</button>
+        <p id="message"></p>
+        <script>
+            function check(){
+                var a,b;
+                a= document.getElementById("pass").value;
+                b= document.getElementById("confirm").value;
+                if(a==b){
+                    b="Login Successful"
+                }
+                else{
+                    b="Password is Incorrect. Check again."
+                }
+                document.getElementById("message").innerHTML=b;
+
+            }
+            
+            </script>  
+</div>
+
+</body>
+
+</html>
